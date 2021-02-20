@@ -18,6 +18,7 @@ import styled from "styled-components";
     align-items:center;
     padding: 1.5rem;
     margin: 10px;
+    cursor:pointer;
 
     @media (min-width: 319px ) {
         

@@ -4,8 +4,10 @@ import styled from 'styled-components'
 
 
 const ContainerButton= styled.div`
+    margin:auto;
+    margin-top:15px;
     display:flex;
-    justify-content:space-around;
+    justify-content: space-around;
 
  
 
@@ -23,7 +25,7 @@ const nameButton = [
 const Buttons = () => {
     return (
         <ContainerButton>
-            {nameButton.map((x) => (
+            {nameButton.map((x , i) => (
                 <Link href={x.path}>
                     <Button>{x.name}</Button>
                 </Link>
