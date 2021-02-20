@@ -1,0 +1,13 @@
+import styled from "styled-components";
+
+export const Layout = styled.div`
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    border-style: double;
+    border-width: 10px;
+    border-color: #ffecb3;
+`;

@@ -1,12 +1,13 @@
 import HomeLayout from '../components/Layouts/HomeLayout'
 
 
-const Contacto = () => {
+
+const Casos = () => {
     return (
         <HomeLayout>
-            <h1>Contacto</h1>
+            <h1>Casos</h1>
         </HomeLayout>
     )
 }
 
-export default Contacto
+export default Casos

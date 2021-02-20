@@ -1,8 +1,7 @@
 import Head from "next/head";
+import { Layout } from "../components/Layouts/Layout";
 
-
-
-function MyApp({ Component, pageProps }) {
+const MyApp = ({ Component, pageProps }) => {
     return (
         <>
             <Head>
@@ -16,17 +15,19 @@ function MyApp({ Component, pageProps }) {
                 <link
                     rel="stylesheet"
                     href="https://fonts.googleapis.com/icon?family=Material+Icons"
-                    
                 />
-                 <link rel="preconnect" href="https://fonts.gstatic.com" />
+                <link rel="preconnect" href="https://fonts.gstatic.com" />
                 <link
                     href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap"
                     rel="stylesheet"
                 />
             </Head>
-            <Component {...pageProps} />
+
+            <Layout>
+                <Component {...pageProps} />
+            </Layout>
         </>
     );
-}
+};
 
 export default MyApp;

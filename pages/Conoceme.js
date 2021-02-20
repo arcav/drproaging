@@ -1,8 +1,10 @@
+import HomeLayout from '../components/Layouts/HomeLayout'
+
 const Conoceme = () => {
     return (
-        <div>
+        <HomeLayout>
             <h1>Conoceme</h1>
-        </div>
+        </HomeLayout>
     )
 }
 
