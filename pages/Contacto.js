@@ -1,11 +1,11 @@
-import HomeLayout from '../components/Layouts/HomeLayout'
+
 
 
 const Contacto = () => {
     return (
-        <HomeLayout>
+       
             <h1>Contacto</h1>
-        </HomeLayout>
+        
     )
 }
 

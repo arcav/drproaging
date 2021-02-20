@@ -1,19 +1,5 @@
 import { Button } from "./Button";
 import Link from "next/link";
-import styled from 'styled-components'
-
-
-const ContainerButton= styled.div`
-    margin:auto;
-    margin-top:15px;
-    display:flex;
-    justify-content: space-around;
-
- 
-
-
-`
-
 
 const nameButton = [
     { id: 1, name: "Blog", path: "/Blog" },
@@ -24,13 +10,15 @@ const nameButton = [
 
 const Buttons = () => {
     return (
-        <ContainerButton>
-            {nameButton.map((x , i) => (
-                <Link href={x.path}>
-                    <Button>{x.name}</Button>
+        <>
+            {nameButton.map((x) => (
+                <Link  key={x.id} href={x.path}>
+                    <Button>
+                        {x.name}
+                    </Button>
                 </Link>
             ))}
-        </ContainerButton>
+        </>
     );
 };
 

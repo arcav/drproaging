@@ -1,8 +1,12 @@
 import styled from "styled-components";
 
-
- export const Button = styled.button`
-    margin: 10px 2px 10px 2px;
+export const Button = styled.a`
+    display: flex;
+    margin:6px;
+    align-items:center;
+    flex-direction: row;
+    justify-content: center;
+    width: 15%;
     border-radius: 10px;
     background-color: black;
     height: 3rem;
@@ -10,24 +14,13 @@ import styled from "styled-components";
     border-style: solid;
     border-color: #ffe082;
     border-width: 2px;
-    font-weight: 400;
-    text-align: center;
-    font-size: 1.2rem;
-    display: inline-flex;
-    justify-content: center;
-    align-items:center;
-    padding: 1.5rem;
-    margin: 10px;
-    cursor:pointer;
+    cursor: pointer;
 
-    @media (min-width: 319px ) {
-        
-        width: 10rem;
-        font-size: 15px;
-        display:  inline-flex;
-        align-items: center;
-        align-content: center;
-        justify-content: center;
+    @media (min-width: 310px) {
+        width: 65%;
+        height: 20%;
+        padding:5px;
+        font-size: 18px;
     }
 
     :hover {
@@ -43,6 +36,4 @@ import styled from "styled-components";
     h6 {
         text-align: center;
     }
-
 `;
-

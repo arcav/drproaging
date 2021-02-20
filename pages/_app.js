@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { Layout } from "../components/Layouts/Layout";
+import { Layout, CardLayout } from "../components/Layouts/Layout";
 
 const MyApp = ({ Component, pageProps }) => {
     return (
@@ -24,7 +24,9 @@ const MyApp = ({ Component, pageProps }) => {
             </Head>
 
             <Layout>
-                <Component {...pageProps} />
+              {/*   <CardLayout className="card z-depth-5"> */}
+                    <Component {...pageProps} />
+                {/* </CardLayout> */}
             </Layout>
         </>
     );
