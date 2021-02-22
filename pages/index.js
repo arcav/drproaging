@@ -4,21 +4,25 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     display: flex;
-    flex-direction: row;
-    width: 100%;
+    flex-direction: row;  
+    justify-content: center;
+    align-content: space-around;
+   
 
     @media (max-width: 375px) {
-        display: flex;
+       
         flex-direction: column;
-        align-items: center;
+        align-items: center;       
         justify-content: center;
         width: 95%;
-        height: 95%;
+        height: 100vh;
+        margin:auto;   
     } ;
 `;
 const ContainerButton = styled(Container)`
     justify-content: center;
-    height: 33%;
+    height: 20%;
+  
 `;
 
 const index = () => {

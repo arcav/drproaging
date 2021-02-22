@@ -5,11 +5,10 @@ import styled from "styled-components";
 const StyledLogo = styled.img`
     display: flex;
     flex-direction: column;
-    
     justify-content: center;
-    padding: 1rem;
     height: 20%;
-    width: 100%;
+    width: 95%;
+    margin-top:4rem;
 `;
 
 const Logo = () => {

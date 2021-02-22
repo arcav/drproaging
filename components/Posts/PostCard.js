@@ -4,10 +4,14 @@ import Link from "next/link";
 
 const Card = styled.div`
     display: flex;
-    align-items:space-between;
     flex-direction:column;
-    
-    width:50%;
+    width:20%;
+    box-sizing:content-box;
+    text-align:center;
+
+   
+
+   
  
    
 `;

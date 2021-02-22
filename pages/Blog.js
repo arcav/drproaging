@@ -1,13 +1,18 @@
 import axios from "axios";
 import styled from "styled-components";
 import Posts from "../components/Posts/Posts";
-import { Container } from "./index"; 
+import { Container } from "./index";
 
+const BlogContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    margin:3rem;
 
-const BlogContainer = styled(Container)`
+  
+    
 
-
-`
+    
+`;
 
 const URL = "http://localhost:1337";
 
