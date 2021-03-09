@@ -1,12 +1,11 @@
 
 
 
-
 const Casos = () => {
     return (
-            <h1>Casos</h1>
-        
-    )
-}
+       <h1> Casos</h1>
+            
+    );
+};
 
-export default Casos
+export default Casos;

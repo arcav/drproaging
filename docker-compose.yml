@@ -1,0 +1,16 @@
+version: '3.4'
+
+services:
+  drproaging:
+    build: 
+      context: .
+      dockerfile: ./Dockerfile
+    image: drproaging
+    container_name: drproaging
+    ports:
+      - 3000:3000
+  volumes:  
+usr/src/app
+ 
+  
+

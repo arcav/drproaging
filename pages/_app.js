@@ -1,12 +1,15 @@
 import Head from "next/head";
-import Layout   from './Layout/Layout';
+import Layout from "./Layout/Layout";
 
 const MyApp = ({ Component, pageProps }) => {
     return (
         <>
             <Head>
                 <title>Dr.Proaging</title>
-                <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+                <meta
+                    name="viewport"
+                    content="width=device-width, initial-scale=1.0"
+                ></meta>
                 <link
                     rel="stylesheet"
                     href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
@@ -25,9 +28,7 @@ const MyApp = ({ Component, pageProps }) => {
             </Head>
 
             <Layout>
-              {/*   <CardLayout className="card z-depth-5"> */}
-                    <Component {...pageProps} />
-                {/* </CardLayout> */}
+                <Component {...pageProps} />
             </Layout>
         </>
     );

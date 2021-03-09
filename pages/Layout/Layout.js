@@ -1,5 +1,20 @@
 import { createGlobalStyle } from "styled-components";
 
+import styled from "styled-components";
+
+import Footer from "../../components/Footer/Footer";
+import Logo from "../../components/Logo/Logo";
+
+export const Container = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+    width: 95%;
+    height: 95%;
+    border-radius: 20px;
+`;
+
 export const GlobalStyle = createGlobalStyle`
 
 html{
@@ -8,28 +23,30 @@ html{
    
   }
   body {
-  display:flex;
-  
- 
-    *{
-      box-sizing:content-box;
-    }
     border-style: double;
     border-width: 10px;
-    border-color: #ffecb3;
-
-  }
- 
-  // anything else you would like to include
+    border-color: #fff8e1;
+    background-color:#EDF2F7;
+    height:100%;
+   
+    overflow-y:auto;
+  
 }
-
-
+    
+   
+  
+}
 `;
+
 const Layout = ({ children }) => {
     return (
         <>
             <GlobalStyle />
-            {children}
+            <Container className="card z-depth-3">
+                <Logo />
+                {children}
+                <Footer />
+            </Container>
         </>
     );
 };

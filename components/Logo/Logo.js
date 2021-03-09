@@ -1,14 +1,15 @@
-import Image from "next/image";
-import Buttons from "../Buttons/Buttons";
 import styled from "styled-components";
 
 const StyledLogo = styled.img`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 20%;
-    width: 95%;
-    margin-top:4rem;
+    width: 50%;
+    margin-top: 2rem;
+    padding: 0.9rem;
+    @media (max-width: 425px) {
+        width: 80%;
+    margin-top: 2rem;
+    padding: 0.9rem;
+        
+    }
 `;
 
 const Logo = () => {

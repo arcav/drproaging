@@ -1,30 +1,32 @@
 import styled from "styled-components";
-import LogoButton from "../Buttons/Button";
-import Link from "next/link";
 
-const Card = styled.div`
-    display: flex;
-    flex-direction:column;
-    width:20%;
-    box-sizing:content-box;
-    text-align:center;
 
-   
 
-   
- 
-   
+const CardWrapper = styled.div`
+    justify-content: center;
+    margin: 10px;
+    border-radius:10px;
+    cursor: pointer;
+
+    h3 {
+        font-size: 28px;
+    }
 `;
 
-const PostCard = ({ Titulo, Foto, URL }) => (
-    
-    <Card className="card">
-        <img src={`${URL}${Foto[0].url}`} />
-
-        <p>{Titulo}</p>
-
-        <Link href="/Post">Post</Link>
-    </Card>
-);
+const PostCard = ({ Titulo, Post, Foto, baseUrl }) => {
+    return (
+     
+            <CardWrapper className="card z-depth-2">
+                <h3>{Titulo}</h3>
+                <img
+                    className="responsive-img"
+                    src={`${Foto}`}
+                    /*  src={`${baseUrl}${Foto[0].url}`} */
+                />
+                <p>{Post}</p>
+            </CardWrapper>
+       
+    );
+};
 
 export default PostCard;
