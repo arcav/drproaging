@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import { normalize } from "styled-normalize";
 
 import styled from "styled-components";
 
@@ -16,7 +17,7 @@ export const Container = styled.div`
 `;
 
 export const GlobalStyle = createGlobalStyle`
-
+${normalize}
 html{
     html {
       font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
