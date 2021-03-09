@@ -25,10 +25,10 @@ const PostContainer = styled.div`
         grid-template-columns: 4fr 4fr;
     }
     @media (min-width: 1024px) {
-        width: 90%;
+        width: 80%;
         display: grid;
-        grid-template-rows: 1fr;
-        grid-template-columns: 4fr 4fr 4fr 4fr;
+
+        grid-template-columns: 2fr 2fr 2fr;
     }
 `;
 
