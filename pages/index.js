@@ -6,9 +6,9 @@ const index = () => {
     return (
         <>
         
-            <ButtonContainer>
+           {/*  <ButtonContainer>
                 <Buttons />
-            </ButtonContainer>
+            </ButtonContainer> */}
         </>
     );
 };

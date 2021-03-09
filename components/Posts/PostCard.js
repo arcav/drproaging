@@ -10,14 +10,19 @@ const CardWrapper = styled.div`
 
     h3 {
         font-size: 28px;
+        margin:10px; 
+        text-align: center;
     }
     img {
         margin: -25px 0px 0px 35px;
         border-radius: 10px 10px 10px 10px;
          border:solid #fff8e1 2.8px; 
         height:90%;
-        width:90%;
-       
+        width:90%;  
+    }
+
+    p{
+        margin:15px;
     }
 `;
 
