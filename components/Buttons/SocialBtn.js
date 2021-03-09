@@ -7,15 +7,15 @@ import {Facebook2}  from "@styled-icons/icomoon/Facebook2"
 const Ig = styled(SocialInstagram)`
     color: black;
     margin: 0.1rem;
-    padding: 1rem;
-    width: 5rem;
+    padding:5px;
+    width: 3.3rem;
     :focus {
         color: black;
     }
     
         :hover {
             background-color: black;
-            width: 5.5rem;
+            width: 3.5rem;
             color:  #FD1D1D;
         }
     
@@ -24,13 +24,13 @@ const Ig = styled(SocialInstagram)`
 const Fb = styled(Facebook2)`
     color: black;
     margin: 0.1rem;
-    padding: 1rem;
-    width: 4.2rem;
+    padding:5px;
+    width: 2.7rem;
    
 
         :hover {
             background-color: black;
-            width: 4.7rem;
+            width: 3rem;
             color:  blue;
        
     }
@@ -39,15 +39,15 @@ const Fb = styled(Facebook2)`
 const Linkdin = styled(Linkedin)`
     color: black;
     margin: 0.1rem;
-    padding: 1rem;
-    width: 4.2rem;
+    padding: 5px;
+    width: 2.7rem;
     :focus {
         color: black;
     }
     
         :hover {
             background-color: black;
-            width: 4.8rem;
+            width: 3rem;
             color: blue;
       
     }
@@ -56,15 +56,15 @@ const Linkdin = styled(Linkedin)`
 const Whats = styled(Whatsapp)`
     color: black;
     margin: 0.1rem;
-    padding: 1rem;
-    width: 5rem;
+    padding: 5px;
+    width: 3.3rem;
     :focus {
         color: black;
     }
    
         :hover {
             background-color: black;
-            width: 5.5rem;
+            width: 3.8rem;
             color: green;
         
             
@@ -74,10 +74,12 @@ const Whats = styled(Whatsapp)`
 
 const SocialGroup = styled.div`
     display: flex;
+    flex-direction:row;
+    justify-content:space-around;
 
     @media (min-width: 320px) {
-        width:90%;
-        justify-content:center;
+        width:80%;
+        
     }
 `;
 

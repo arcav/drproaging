@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { jsx as _jsx } from \"react/jsx-runtime\";\n\nvar Contacto = function Contacto() {\n  return /*#__PURE__*/_jsx(\"h1\", {\n    children: \"Contacto\"\n  });\n};\n\nexport default Contacto;","map":null,"metadata":{},"sourceType":"module"}
