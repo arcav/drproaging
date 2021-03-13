@@ -1,7 +1,8 @@
 
 
-import { ButtonContainer,Buttons } from "../components/Buttons/Button";
-import Logo from '../components/Logo/Logo'
+import {Buttons}  from "../components/Buttons/Buttons";
+import {ButtonContainer} from "components/Buttons"
+
 const index = () => {
     return (
         <>
