@@ -1,14 +1,7 @@
 {
-  "/Acercade": "pages/Acercade.html",
-  "/Asesorias": "pages/Asesorias.html",
-  "/Blog": "pages/Blog.js",
-  "/Casos": "pages/Casos.html",
-  "/Contacto": "pages/Contacto.html",
-  "/Layout/Layout": "pages/Layout/Layout.html",
   "/_app": "pages/_app.js",
-  "/api/hello": "pages/api/hello.js",
-  "/": "pages/index.html",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/404": "pages/404.html"
+  "/": "pages/index.js",
+  "/Blog": "pages/Blog.js"
 }

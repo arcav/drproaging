@@ -1,6 +1,6 @@
 
-import Buttons from "../components/Buttons/Buttons";
-import { ButtonContainer } from "../components/Buttons/Button";
+
+import { ButtonContainer,Buttons } from "../components/Buttons/Button";
 import Logo from '../components/Logo/Logo'
 const index = () => {
     return (

@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components";
-import { normalize } from "styled-normalize";
+import {normalize} from 'styled-normalize'
 
 import styled from "styled-components";
 
@@ -26,7 +26,7 @@ html{
   body {
     border-style: double;
     border-width: 10px;
-    border-color: #fff8e1;
+    border-color: #9e9e9e;
     background-color:#EDF2F7;
     height:100%;
    

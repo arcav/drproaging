@@ -5,7 +5,6 @@ export const Button = styled.a`
     margin: px;
     align-items: center;
     justify-content: center;
-
     border-radius: 10px;
     background-color: black;
     height: 30%;
