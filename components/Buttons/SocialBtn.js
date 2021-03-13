@@ -65,10 +65,10 @@ const SocialGroup = styled.div`
 const SocialBtn = () => {
     return (
         <SocialGroup>
-            <Ig className=" waves-effect waves-light white" />
-            <Fb className=" waves-effect waves-light white" />
-            <Whats className=" waves-effect waves-light white" />
-            <Linkdin className=" waves-effect waves-light white" />
+            <Ig size="48" className=" waves-effect waves-light white" />
+            <Fb  size="48"className=" waves-effect waves-light white" />
+            <Whats  size="48" className=" waves-effect waves-light white" />
+            <Linkdin  size="48"className=" waves-effect waves-light white" />
         </SocialGroup>
     );
 };
