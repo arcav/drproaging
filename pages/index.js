@@ -1,6 +1,6 @@
 
 
-import {Buttons}  from "../components/Buttons/Buttons";
+import Buttons  from "../components/Buttons/Buttons";
 import {ButtonContainer} from "components/Buttons"
 
 const index = () => {
