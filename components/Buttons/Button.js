@@ -56,9 +56,5 @@ export const ButtonContainer = styled.div`
     flex-direction: row;
     justify-content: space-between;
     width: 90%;
-    @media (max-width: 768px) {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    } ;
+   
 `;

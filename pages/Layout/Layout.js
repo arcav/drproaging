@@ -46,7 +46,7 @@ const Layout = ({ children }) => {
             <Container className="card z-depth-3">
                 <Logo />
                 {children}
-                <Footer />
+               
             </Container>
         </>
     );
