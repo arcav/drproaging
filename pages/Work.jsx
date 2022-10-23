@@ -1,7 +1,7 @@
-import React from 'react'
+import React from "react";
 
-export const Work = () => {
-  return (
-    <div>Work</div>
-  )
-}
+const Work = () => {
+  return <div>Work</div>;
+};
+
+export default Work;
