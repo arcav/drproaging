@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import Button from "../components/Button";
 import { Hero } from "../components/Hero";
 import { Logo } from "../components/Logo";
@@ -14,10 +15,10 @@ export default function Home() {
       <main className="flex items-center justify-center h-screen bg-slate-100">
         <div className="flex flex-col bg-white w-[90vw] h-[90vh] items-center justify-center rounded-lg shadow-lg shadow-slate-500">
           <Logo />
-          <Button>About</Button>
           <Button>Contact</Button>
+          <Button>About</Button>
           <Button>Blog</Button>
-          <Button>Works</Button>
+          <Button>Work</Button>
         </div>
       </main>
     </div>
