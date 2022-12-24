@@ -2,20 +2,18 @@ import Image from "next/image";
 import { SocialIcon } from "react-social-icons";
 import Button from "../components/Button";
 import { Logo } from "../components/Logo";
-import White from "../public/White.svg";
 
 export default function Home() {
   return (
     <>
       {/* Header */}
       <div className="bg-black h-10 mx-auto rounded-t-lg shadow-md w-full p-1">
-        <Image src={White} />
       </div>
 
       <div className="flex justify-center">
         <Logo />
       </div>
-      <div className=" mb-3 lg:flex lg:mb-10">
+      <div className="flex flex-col justify-center mb-3 lg:flex lg:flex-row lg:mb-10">
         <Button>Contact</Button>
         <Button>About</Button>
         <Button>Blog</Button>
