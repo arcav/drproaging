@@ -1,14 +1,13 @@
 import Link from "next/link";
-import React from "react";
-import Link from "next/link";
-
 const Button = ({ children }) => {
   return (
-    <>
-      <button className="btn bg-black w-11/12  m-2 shadow-md shadow-black text text-white border-double border-[2px] border-white  hover:bg-white hover:text-black  hover:shadow-lg hover:shadow-black hover:transition hover:ease-linear  delay-150  hover:-translate-y-1 hover:scale-105   duration-500 cursor-pointer ">
-        {children}
-      </button>
-    </>
+    <div className="p-3  mx-3 flex flex-col lg:flex-grow">
+      <Link href={children}>
+        <button className="rounded-md h-10 bg-black shadow-md shadow-black  text-white text-lg font-bold  border-double border-[1px] border-white hover:border-black  hover:bg-white  hover:text-black  hover:shadow-md hover:shadow-black hover:transition hover:ease-linear  delay-100  hover:-translate-y-1 hover:scale-100  duration-700 cursor-pointer">
+          {children}
+        </button>
+      </Link>
+    </div>
   );
 };
 

@@ -4,8 +4,8 @@ import Black from "../../public/Black.svg";
 
 export const Logo = () => {
   return (
-    <div className="h-1/3 mx-2 flex items-center justify-center">
-      <Image src={Black} alt="logo" />
+    <div className=" h-[30%] lg:w-[40%] lg:p-2 lg:m-12 mt-3 mx-4 ">
+      <Image src={Black} alt="logo" width={800} height={300} />
     </div>
   );
 };
