@@ -4,5 +4,5 @@ import { client } from "./sanityClient";
 const builder = imageUrlBuilder(client);
 
 export function urlFor(source) {
-  return builder.image(source).auto("format").fit("max").url();
+  return builder.image(source).auto("format").fit("crop");
 }

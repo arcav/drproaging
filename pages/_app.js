@@ -12,9 +12,9 @@ function MyApp({ Component, pageProps }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
-        <Container>
+    
           <Component {...pageProps} />
-        </Container>
+     
       </Layout>
     </>
   );

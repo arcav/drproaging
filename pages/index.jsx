@@ -1,24 +1,25 @@
 import Image from "next/image";
 import { SocialIcon } from "react-social-icons";
 import Button from "../components/Button";
+import Container from "../components/Container";
 import { Logo } from "../components/Logo";
 
 export default function Home() {
   return (
     <>
       {/* Header */}
-      <div className="bg-black h-10 mx-auto rounded-t-lg shadow-md w-full p-1">
-      </div>
-
-      <div className="flex justify-center">
-        <Logo />
-      </div>
-      <div className="flex flex-col justify-center mb-3 lg:flex lg:flex-row lg:mb-10">
-        <Button>Contact</Button>
-        <Button>About</Button>
-        <Button>Blog</Button>
-        <Button>Work</Button>
-      </div>
+      <div className="bg-black h-10 mx-auto rounded-t-lg shadow-md w-full p-1"></div>
+      <Container>
+        <div className="flex justify-center">
+          <Logo />
+        </div>
+        <div className="flex flex-col justify-center mb-3 lg:flex lg:flex-row lg:mb-10">
+          <Button>Contact</Button>
+          <Button>About</Button>
+          <Button>Blog</Button>
+          <Button>Work</Button>
+        </div>
+      </Container>
 
       {/* Footer  Refactor Social Icon in One Component lot duplicate code */}
       <div className="bg-black h-40 rounded-b-lg shadow-xl flex justify-around p-6">
