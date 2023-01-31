@@ -1,9 +1,16 @@
 import React from "react";
+import { Navbar } from "../NavBar/Navbar";
+import {Footer} from "../Footer/Footer"
+
 
 export const Layout = ({ children }) => {
   return (
-    <main className="min-h-screen  flex flex-col justify-center gap-5" >
-      {children}
-    </main>
+    <>
+      <Navbar />
+      <main className="min-h-screen  flex flex-col justify-between">
+        {children}
+      </main>
+      <Footer />
+    </>
   );
 };
