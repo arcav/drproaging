@@ -4,31 +4,26 @@ import { SideBar } from "../SideBar/SideBar";
 import Link from "next/link";
 import Button from "../Button";
 
-const path = [
-  { href: "/", name: "home" },
-  { href: "/nosotros", name: "nosotros" },
-  { href: "/historias", name: "historias" },
-  { href: "/servicios", name: "servicios" },
-  { href: "/blog", name: "blog" },
-  { href: "/contacto", name: "contacto" },
-];
-
 export const Navbar = () => {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(true);
+  const routes = [
+    { href: "/", name: "home" },
+    { href: "/Nosotros", name: "Nosotros" },
+    { href: "/Historias", name: "Historias" },
+    { href: "/Servicios", name: "Servicios" },
+    { href: "/Blogg", name: "Blogg" },
+    { href: "/Contacto", name: "Contacto" },
+  ];
 
-  let navLinkd = path.map((x) => (
+  let navLink = routes.map((path) => (
     <>
-      <Link href={x.href}>{x.name.toUpperCase()}</Link>
+      <Link href={path.href}>{path.name}</Link>
     </>
   ));
 
-  let sideBarLink = path.map((s) => (
-    <>
-      <Button href={s.href}>{s.name.toUpperCase()}</Button>
-    </>
+  let sideBarLink = routes.map((path) => (
+    <Button href={path.href}>{path.name}</Button>
   ));
-
-  console.log(sideBarLink);
 
   const openHandler = () => {
     setOpen((prev) => !prev);
@@ -36,23 +31,19 @@ export const Navbar = () => {
 
   return (
     <>
-      <nav className="flex justify-between w-full h-20 bg-black text-white">
+      <nav className="flex justify-evenly w-full h-20 bg-black text-white">
         <div
-          className="flex items-center w-1/4 justify-center h-full"
+          className="flex pt-2 w-4/6 h-full md:m-auto "
           onClick={openHandler}
         >
-          <Logo />
+          {open ? <Logo /> : null}
         </div>
-        <ul className="flex h-full   px-2 items-center w-1/2">
-          <li className="flex w-full gap-3 justify-evenly mx-auto">
-            {navLinkd}
+        <ul className="hidden md:flex h-full   px-2 items-center w-1/2">
+          <li className="hidden md:flex w-full gap-3 justify-evenly mx-auto">
+            {navLink}
           </li>
         </ul>
-        <SideBar
-          openHandler={openHandler}
-          open={open}
-          sideBarLink={sideBarLink}
-        />
+        <SideBar openHandler={openHandler} open={open} routes={sideBarLink} />
       </nav>
     </>
   );
