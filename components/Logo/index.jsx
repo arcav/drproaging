@@ -1,11 +1,11 @@
 import Image from "next/image";
 import React from "react";
-import White from "../../public/White.svg";
+import White from "../../public/WhiteLogo.svg";
 
 export const Logo = () => {
   return (
     <>
-      <Image src={White} alt="logo" width={400} height={100} />
+      <Image src={White} alt="logo" width={200} height={100} />
     </>
   );
 };
