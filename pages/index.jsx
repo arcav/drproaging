@@ -6,7 +6,9 @@ import { Logo } from "../components/Logo";
 export default function Home() {
   return (
     <>
-
+      <h1>Home
+        
+      </h1>
     </>
   );
 }
