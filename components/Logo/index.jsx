@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import White from "../../public/Black.svg";
+import White from "../../public/White.svg";
 
 export const Logo = () => {
   return (
