@@ -5,7 +5,7 @@ import White from "../../public/WhiteLogo.svg";
 export const Logo = () => {
   return (
     <>
-      <Image src={White} alt="logo" width={200} height={100} />
+      <Image src={White} alt="logo" width={300} height={300}/>
     </>
   );
 };
