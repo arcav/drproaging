@@ -3,6 +3,7 @@ import { client } from "../../utils/sanityClient";
 import { urlFor } from "../../utils/imgBuilder";
 import BlockContent from "@sanity/block-content-to-react";
 import Container from "../../components/Container";
+import Image from "next/image";
 
 const serializers = {
   types: {
@@ -27,7 +28,7 @@ const Blog = ({ posts }) => {
       {posts.map((post, i) => (
         <Container key={i} className="m-10 border-2">
           <p>{post.title}</p>
-          <img src={urlFor(post.mainImage)} width="50px" height="50px" />
+          <Image src={urlFor(post.mainImage)} width={200} height={200} />
           <BlockContent
             blocks={post.body}
             projectId={"gylmzmsj"}

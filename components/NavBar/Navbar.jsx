@@ -21,8 +21,8 @@ export const Navbar = () => {
     </>
   ));
 
-  let sideBarLink = routes.map((path) => (
-    <Button href={path.href}>{path.name}</Button>
+  let sideBarLink = routes.map((path,i) => (
+    <Button key={i} href={path.href}>{path.name}</Button>
   ));
 
   const openHandler = () => {
