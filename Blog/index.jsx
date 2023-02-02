@@ -1,8 +1,8 @@
 import React from "react";
-import { client } from "../../utils/sanityClient";
-import { urlFor } from "../../utils/imgBuilder";
+import { client } from "../utils/sanityClient";
+import { urlFor } from "../utils/imgBuilder";
 import BlockContent from "@sanity/block-content-to-react";
-import Container from "../../components/Container";
+import Container from "../components/Container";
 import Image from "next/image";
 
 

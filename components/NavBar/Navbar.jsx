@@ -1,3 +1,4 @@
+'use'
 import React, { useState } from "react";
 import { Logo } from "../Logo";
 import { SideBar } from "../SideBar/SideBar";
@@ -5,7 +6,7 @@ import Link from "next/link";
 import Button from "../Button";
 
 export const Navbar = () => {
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
   const routes = [
     { href: "/", name: "home" },
     { href: "/Nosotros", name: "Nosotros" },
@@ -36,7 +37,7 @@ export const Navbar = () => {
           className="flex pt-2 w-4/6 h-full md:m-auto "
           onClick={openHandler}
         >
-          {open ? <Logo /> : null}
+          {!open ? <Logo /> : null}
         </div>
         <ul className="hidden md:flex h-full   px-2 items-center w-1/2">
           <li className="hidden md:flex w-full gap-3 justify-evenly mx-auto">

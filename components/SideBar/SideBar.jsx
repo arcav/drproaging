@@ -5,7 +5,7 @@ export const SideBar = ({ openHandler, open, routes }) => {
   return (
     <div
       className={`w-full h-screen bg-stone-50 bg-opacity-80 z-20 top-0 right-0 fixed transition-all duration-700  ${
-        !open ? "top-0" : "-top-full"
+        open ? "top-0" : "-top-full"
       }`}
     >
       <div
