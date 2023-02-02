@@ -5,6 +5,7 @@ import BlockContent from "@sanity/block-content-to-react";
 import Container from "../../components/Container";
 import Image from "next/image";
 
+
 const serializers = {
   types: {
     code: (props) => (
